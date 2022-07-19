@@ -23,7 +23,7 @@ spec:
       port: 80
   routes:
     - path: /
-    matches:
+      matches:
       - conditions:
           - cookie: "app_version"
             value: "dark"
