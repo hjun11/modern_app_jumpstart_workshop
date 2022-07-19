@@ -22,15 +22,9 @@ spec:
       service: spa-dark
       port: 80
   routes:
-    - path: /
-      matches:
-      - conditions:
-          - cookie: "app_version"
-            value: "dark"
-        action:
-          pass: spa-dark
+    - path: /  
       action:
-        pass: spa
+        pass: spa-dark
     - path: /api
       policies:
         - name: rate-limit-policy
