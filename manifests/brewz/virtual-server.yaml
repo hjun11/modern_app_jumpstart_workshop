@@ -51,7 +51,7 @@ spec:
               {\"msg\": \"Could not find the product!\"}
             headers:
               - name: x-debug-original-status
-                values: ${upstream_status}
+                value: ${upstream_status}
     - path: /api/inventory
       action:
         proxy:
